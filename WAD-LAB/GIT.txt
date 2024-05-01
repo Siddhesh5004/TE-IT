@@ -1,0 +1,11 @@
+0how to add/push files in git in UBUNTU terminal
+
+1] git config --global user.name ""
+2] git config --global user.email ""
+3] git clone <repolink>
+4] git status
+5] create and add a new file to git repo which was cloned
+6] git add <file-name>
+7] git remote set-url origin https://<token>/username/reponame
+8] git push origin main 
+9] git log 
