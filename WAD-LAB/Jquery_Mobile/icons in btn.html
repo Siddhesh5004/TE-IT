@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile Icons with ui-icon Class</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Icon with ui-icon Class</h1>
+        </div>
+        <div data-role="content">
+            <!-- Button with icon using ui-icon class -->
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+
+            <!-- Button with search icon -->
+            <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+
+            <!-- Button with settings icon on the right -->
+            <a href="#settings" class="ui-btn ui-icon-gear ui-btn-icon-right">Settings</a>
+
+            <!-- Button with info icon on the top -->
+            <a href="#info" class="ui-btn ui-icon-info ui-btn-icon-top">Info</a>
+
+            <!-- Button with delete icon -->
+            <a href="#delete" class="ui-btn ui-icon-delete ui-btn-icon-left">Delete</a>
+
+            <!-- List with icons -->
+            <ul data-role="listview">
+                <li><a href="#home" class="ui-icon-home ui-btn-icon-left">Home</a></li>
+                <li><a href="#settings" class="ui-icon-gear ui-btn-icon-left">Settings</a></li>
+                <li><a href="#info" class="ui-icon-info ui-btn-icon-left">Info</a></li>
+            </ul>
+            <div data-role="collapsible">
+                <h3>Section 1</h3>
+                <p>This is collapsible content.</p>
+            </div>
+            
+
+            <!-- Navbar with icons -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-icon-home ui-btn-icon-left">Home</a></li>
+                    <li><a href="#search" class="ui-icon-search ui-btn-icon-left">Search</a></li>
+                    <li><a href="#settings" class="ui-icon-gear ui-btn-icon-left">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).on('pagecreate', '#page1', function(){
+            // Example: Programmatically click the Home button
+            $('#homeBtn').on('click', function(){
+                alert('Home button clicked!');
+            });
+        });
+    </script>
+</body>
+</html>

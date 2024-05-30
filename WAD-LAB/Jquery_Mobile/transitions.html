@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition Effects with jQuery</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 50px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Flip */
+        .flip {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip.flip-active {
+            transform: rotateY(180deg);
+        }
+
+        /* Fade */
+        .fade {
+            transition: opacity 0.5s;
+            opacity: 1;
+        }
+
+        .fade.fade-active {
+            opacity: 0;
+        }
+
+        /* Slide */
+        .slide {
+            transition: transform 0.5s;
+        }
+
+        .slide.slide-active {
+            transform: translateX(200px);
+        }
+
+        /* Slide Up */
+        .slideup {
+            transition: transform 0.5s, opacity 0.5s;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .slideup.slideup-active {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        /* Pop */
+        .pop {
+            transition: transform 0.3s;
+            transform: scale(1);
+        }
+
+        .pop.pop-active {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box flip" id="flipBox">Flip</div>
+    <div class="box fade" id="fadeBox">Fade</div>
+    <div class="box slide" id="slideBox">Slide</div>
+    <div class="box slideup" id="slideUpBox">Slide Up</div>
+    <div class="box pop" id="popBox">Pop</div>
+    <br>
+    <button id="flipButton">Toggle Flip</button>
+    <button id="fadeButton">Toggle Fade</button>
+    <button id="slideButton">Toggle Slide</button>
+    <button id="slideUpButton">Toggle Slide Up</button>
+    <button id="popButton">Toggle Pop</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#flipButton').on('click', function() {
+                $('#flipBox').toggleClass('flip-active');
+            });
+
+            $('#fadeButton').on('click', function() {
+                $('#fadeBox').toggleClass('fade-active');
+            });
+
+            $('#slideButton').on('click', function() {
+                $('#slideBox').toggleClass('slide-active');
+            });
+
+            $('#slideUpButton').on('click', function() {
+                $('#slideUpBox').toggleClass('slideup-active');
+            });
+
+            $('#popButton').on('click', function() {
+                $('#popBox').toggleClass('pop-active');
+            });
+        });
+    </script>
+</body>
+</html>

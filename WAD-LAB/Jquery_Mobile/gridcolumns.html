@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1-5 Columns Grid in jQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>1-5 Columns Grid</h1>
+        </div>
+        <div data-role="content">
+            <!-- 1-Column Grid -->
+            <div class="ui-grid-solo">
+                <div class="ui-block-a">1-Column</div>
+            </div>
+            <br>
+
+            <!-- 2-Column Grid -->
+            <div class="ui-grid-a">
+                <div class="ui-block-a">2-Column A</div>
+                <div class="ui-block-b">2-Column B</div>
+            </div>
+            <br>
+
+            <!-- 3-Column Grid -->
+            <div class="ui-grid-b">
+                <div class="ui-block-a">3-Column A</div>
+                <div class="ui-block-b">3-Column B</div>
+                <div class="ui-block-c">3-Column C</div>
+            </div>
+            <br>
+
+            <!-- 4-Column Grid -->
+            <div class="ui-grid-c">
+                <div class="ui-block-a">4-Column A</div>
+                <div class="ui-block-b">4-Column B</div>
+                <div class="ui-block-c">4-Column C</div>
+                <div class="ui-block-d">4-Column D</div>
+            </div>
+            <br>
+
+            <!-- 5-Column Grid -->
+            <div class="ui-grid-d">
+                <div class="ui-block-a">5-Column A</div>
+                <div class="ui-block-b">5-Column B</div>
+                <div class="ui-block-c">5-Column C</div>
+                <div class="ui-block-d">5-Column D</div>
+                <div class="ui-block-e">5-Column E</div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h4>Footer</h4>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Themed Web App with jQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- Page with theme "a" -->
+    <div data-role="page" id="page1" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Page with Theme A</h1>
+        </div>
+        <div data-role="content" data-theme="b">
+            <p>This content area uses theme "b".</p>
+            <a href="#page2" data-role="button" data-theme="c">Go to Page with Theme C</a>
+        </div>
+        <div data-role="footer" data-theme="a">
+            <h4>Footer with Theme A</h4>
+        </div>
+    </div>
+
+    <!-- Page with theme "c" -->
+    <div data-role="page" id="page2" data-theme="c">
+        <div data-role="header" data-theme="c">
+            <h1>Page with Theme C</h1>
+        </div>
+        <div data-role="content" data-theme="d">
+            <p>This content area uses theme "d".</p>
+            <a href="#page1" data-role="button" data-theme="b">Go to Page with Theme A</a>
+        </div>
+        <div data-role="footer" data-theme="c">
+            <h4>Footer with Theme C</h4>
+        </div>
+    </div>
+</body>
+</html>

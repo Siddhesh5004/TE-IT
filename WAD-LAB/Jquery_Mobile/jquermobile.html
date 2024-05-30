@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQUERY</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  <!--cdn files(url)-->
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">      <!--header--> 
+            <h1>Page header</h1>
+        </div>
+        <div data-role="content">
+            <a href="" data-role="button">this is a button</a> <!--button-->
+            <h3>list of web Technology</h3>
+            
+            <ul data-role="listview" data-theme="g">  <!--listview-->
+                <li><a href="#"> html</a></li>
+                <li><a href="#">css</a></li>
+                <li><a href="#">js</a></li>
+            </ul>
+        </div>
+        <div data-role="footer"> <!--footer-->
+            <h4>footer 2024</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2" data-title="this is second page" style="overflow: hidden"> <!---second page linked within first page-->
+</div>
+        <div data-role="header"> <!--header of second page-->
+            <h1>i am header of page 2</h1>
+            <a href="#page1" data-icon="arrow-l" class="ui-btn-left"> back</a> <!--navbar-->
+        </div>
+
+        <div data-role="content"> <!--main content div-->
+            <p>this is main content of sencond page</p>
+            <p>you can go back using header btn or brower back btn</p>
+        </div>
+
+        <div data-role="footer"> <!--footer-->
+            <h4>my publication 2024</h4>
+        </div>
+    </div>
+</body>
+
+</html>
